@@ -149,9 +149,9 @@ public class LevelScript : MonoBehaviour
 }
 ```
 
-### Use of `Navmesh AI` in vehicle tracking and traffic control for Unlocking New Levels
+### Use of `Navmesh AI` in vehicle tracking and traffic control
 
-For this purpose built an AI system with usimg NavMesh AI.
+For this purpose built an AI system with using NavMesh AI.
 
 ```csharp
 private NavMeshAgent navMeshAgent;
