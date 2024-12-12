@@ -149,6 +149,22 @@ public class LevelScript : MonoBehaviour
 }
 ```
 
+### Use of `Navmesh AI` in vehicle tracking and traffic control for Unlocking New Levels
+
+For this purpose built an AI system with usimg NavMesh AI.
+
+```csharp
+private NavMeshAgent navMeshAgent;
+
+```
+
+# Common Use Cases of UnityEngine.AI:
+
+Enemy AI: Making enemies follow or chase the player while avoiding obstacles.
+NPC Movement: Making NPCs move in the game world based on different objectives (patrolling, following, etc.).
+Vehicle AI: Vehicles or cars navigating roads or streets while avoiding collisions.
+AI Navigation for Games: Any other scenario where characters need to navigate through a 3D space and interact with obstacles.
+
 ### 2. **Performance Optimization**:
 
 - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
