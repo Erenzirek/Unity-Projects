@@ -63,32 +63,32 @@
 
 ## How to Play
 
-1. Choose a game mode from the main menu.
-2. Navigate through the traffic to reach your destination or solve the given puzzle.
-3. Use in-game currency to unlock new cars and upgrades.
+1. Choose a level from the main menu.
+2. Navigate through the traffic to reach your destination and park the car correctly.
+3. Use in-game currency to unlock new upgrades.
 4. Progress through levels to unlock harder challenges.
 
 ## System Requirements
 
 ### Minimum:
 
-- **OS**: Windows 7/10, macOS 10.12
-- **Processor**: Dual-core 2.0 GHz
-- **Memory**: 4 GB RAM
-- **Graphics**: Integrated GPU
-- **Storage**: 500 MB available space
+- **OS**: Android 8.0 (Oreo) veya üzeri
+- **Processor**: Quad-core 1.8 GHz veya daha yüksek
+- **Memory**: 2 GB RAM
+- **Graphics**: Adreno 506 veya benzeri
+- **Storage**: 40 MB kullanılabilir alan
 
 ### Recommended:
 
-- **OS**: Windows 10, macOS 11
-- **Processor**: Quad-core 3.0 GHz
-- **Memory**: 8 GB RAM
-- **Graphics**: Dedicated GPU (2 GB VRAM)
-- **Storage**: 1 GB available space
+- **OS**: Android 10.0 (Q) veya üzeri
+- **Processor**: Octa-core 2.0 GHz veya daha yüksek
+- **Memory**: 4 GB RAM
+- **Graphics**: Adreno 612 veya benzeri
+- **Storage**: 40 MB kullanılabilir alan
 
 ## Development Roadmap
 
-- **Future Updates**: Plans for multiplayer mode, new cars, and additional environments.
+- **Future Updates**: Plans new cars, and additional level designs.
 - **Player Feedback**: Your suggestions will shape upcoming features.
 
 ## Visual Insights
