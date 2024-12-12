@@ -118,6 +118,37 @@ for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
 }
 ```
 
+### Use of `PlayerPrefs` in `LevelScript` for Unlocking New Levels
+
+In the **`LevelScript`** script, we manage level progression and unlocking new levels when the player successfully completes a level. Here's how the process works:
+
+```csharp
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class LevelScript : MonoBehaviour
+{
+    public void Pass()
+    {
+        // Get the current level's index.
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+        // If the player has completed this level and it's the highest level unlocked,
+        // the next level gets unlocked.
+        if (currentLevel >= PlayerPrefs.GetInt("levelsUnlocked"))
+        {
+            // Update the unlocked levels in PlayerPrefs.
+            PlayerPrefs.SetInt("levelsUnlocked", currentLevel + 1);
+        }
+
+        // Log the newly unlocked level to the console.
+        Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + " UNLOCKED");
+    }
+}
+```
+
 ### 2. **Performance Optimization**:
 
 - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
