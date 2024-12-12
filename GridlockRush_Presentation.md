@@ -39,25 +39,17 @@
 
 ## Primary Gameplay Images
 
-- **Screenshot 1**
-  ![Gameplay Screenshot 1](./Project-Images/Game-Image-1.jpg)
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="./Project-Images/Game-Image-1.jpg" alt="Gameplay Screenshot 1" style="width: 30%;">
+  <img src="./Project-Images/Game-Image-2.jpg" alt="Gameplay Screenshot 2" style="width: 30%;">
+  <img src="./Project-Images/Game-Image-3.jpg" alt="Gameplay Screenshot 3" style="width: 30%;">
+</div>
 
-- **Screenshot 2**
-  ![Gameplay Screenshot 2](./Project-Images/Game-Image-2.jpg)
-
-- **Screenshot 3**
-  ![Gameplay Screenshot 3](./Project-Images/Game-Image-3.jpg)
-
-## Additional Gameplay Images
-
-- **Screenshot 4**
-  ![Gameplay Screenshot 4](./Project-Images/Game-Image-4.jpg)
-
-- **Screenshot 5**
-  ![Gameplay Screenshot 5](./Project-Images/Game-Image-5.jpg)
-
-- **Screenshot 6**
-  ![Gameplay Screenshot 6](./Project-Images/Game-Image-6.jpg)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img src="./Project-Images/Game-Image-4.jpg" alt="Gameplay Screenshot 4" style="width: 30%;">
+  <img src="./Project-Images/Game-Image-5.jpg" alt="Gameplay Screenshot 5" style="width: 30%;">
+  <img src="./Project-Images/Game-Image-6.jpg" alt="Gameplay Screenshot 6" style="width: 30%;">
+</div>
 
 ## How to Play
 
