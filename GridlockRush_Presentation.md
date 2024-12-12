@@ -93,12 +93,35 @@
 
 ## Code Review
 
-Before diving into the game's visual design and insights, let's review the code to ensure the overall performance and stability of the application:
+Before diving into the game's visual design and insights, it’s important to conduct a **Code Review** to ensure quality, maintainability, and optimization.
 
-- **Code Structure**: Ensure that the project follows a clear, maintainable structure, with organized directories for assets, scripts, and resources.
-- **Performance Optimization**: Check if any parts of the game could benefit from optimization, particularly the handling of dynamic traffic conditions and time-sensitive challenges.
-- **Bug Fixes**: Review the codebase for any existing bugs or glitches that could affect gameplay, especially in traffic simulation and user interaction.
-- **Code Efficiency**: Look for opportunities to refactor and improve the efficiency of the code, particularly in rendering and physics calculations.
+1. **Code Structure**:
+
+   - Ensure the codebase follows a clean and consistent structure.
+   - Organize the project into clear directories for assets, scripts, and resources.
+   - Check for unnecessary duplication and streamline code where possible.
+
+2. **Performance Optimization**:
+
+   - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
+   - Look for areas where memory usage can be reduced and frame rates improved, especially during intense traffic scenarios.
+   - Optimize loading times for smoother gameplay experience.
+
+3. **Bug and Error Checking**:
+
+   - Ensure that all major gameplay features work smoothly, including traffic AI, car physics, and user interactions.
+   - Address any existing bugs or glitches in the game mechanics, particularly in time-sensitive challenges or parking sequences.
+
+4. **Code Readability**:
+
+   - Ensure that variable names are meaningful, and code is well-documented for future developers.
+   - Simplify complex logic where possible to make it easier for new developers to understand and contribute.
+
+5. **Testing**:
+   - Implement unit tests where applicable, especially for traffic behavior and car controls.
+   - Perform stress tests to ensure the game can handle multiple cars and dynamic traffic scenarios without performance degradation.
+
+By conducting a thorough code review, we ensure that **Gridlock Rush** remains performant, bug-free, and ready for future development.
 
 ## Visual Insights
 
