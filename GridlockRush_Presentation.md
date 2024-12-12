@@ -6,6 +6,8 @@
 
 ![Gridlock Rush Banner](C:/Users/erenz/CarGame/Assets/UI/Symbol_3.jpg)
 
+## Game
+
 ## Key Features
 
 - **Realistic Traffic Simulation**: Navigate through dynamically changing traffic conditions.
