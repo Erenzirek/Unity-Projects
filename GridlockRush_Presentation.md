@@ -168,6 +168,62 @@ NPC Movement: Making NPCs move in the game world based on different objectives (
 Vehicle AI: Vehicles or cars navigating roads or streets while avoiding collisions.
 AI Navigation for Games: Any other scenario where characters need to navigate through a 3D space and interact with obstacles.
 
+```csharp
+void Update()
+{
+    // Calculate the distance between the enemy and the player's car.
+    float distanceToPlayer = Vector3.Distance(transform.position, playerCar.position);
+
+    // If the enemy is close enough to the player (within detection range) and is not currently charging
+
+    if (distanceToPlayer <= detectionRange && !isCharging)
+    {
+        // Start charging towards the player to collide
+        StartCoroutine(Charge());
+    }
+    else if (distanceToPlayer <= rangeCheckDistance)
+    {
+        // If the enemy is within a slightly larger range, follow the player normally
+        FollowPlayer();
+    }
+    else
+    {
+        // If the player is too far away, log a message (currently no other action is taken)
+        Debug.Log("Player out of range, but no movement logic yet.");
+    }
+}
+
+```
+
+```csharp
+void Update()
+{
+    // Calculate the distance between the enemy and the player's car.
+    float distanceToPlayer = Vector3.Distance(transform.position, playerCar.position);
+
+    // If the enemy is close enough to the player (within detection range) and is not currently charging
+
+    if (distanceToPlayer <= detectionRange && !isCharging)
+    {
+        // Start charging towards the player to collide
+        StartCoroutine(Charge());
+    }
+    else if (distanceToPlayer <= rangeCheckDistance)
+    {
+        // If the enemy is within a slightly larger range, follow the player normally
+        FollowPlayer();
+    }
+    else
+    {
+        // If the player is too far away, log a message (currently no other action is taken)
+        Debug.Log("Player out of range, but no movement logic yet.");
+    }
+}
+
+```
+
+The FollowPlayer() method makes the enemy follow the player's car while keeping a minimum distance. It calculates the direction to the player, adjusts the target position to stay behind the player by a specified distanceOffset, and then directs the enemy to that target using the NavMeshAgent. This ensures the enemy follows the player without getting too close.
+
 ### 2. **Performance Optimization**:
 
 - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
