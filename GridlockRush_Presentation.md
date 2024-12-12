@@ -1,52 +1,71 @@
-# Unity Quit Application Script
+# Gridlock Rush: A Car Simulator Game
 
-This script provides functionality to quit the application in Unity. It is particularly useful for adding a "Quit" button in your game's UI.
+## Game Overview
 
-## Code Example
+**Gridlock Rush** is an engaging car simulation game where players navigate through challenging traffic scenarios. Test your driving skills, solve puzzles, and experience the thrill of overcoming gridlocks in style.
 
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-// Manages application quit functionality
-public class NewBehaviourScript : MonoBehaviour
-{
-    // Quits the application when invoked
-    public void QuitApplication()
-    {
-        // Initiates the application exit process
-        Application.Quit();
-
-        // Logs a message indicating the quit process was triggered
-        Debug.Log("Exit initiated");
-
-        // Specific to Unity Editor: Stops play mode
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-    }
-}
-```
+![Gridlock Rush Banner](path/to/banner-image.png)
 
 ## Key Features
 
-- **Application.Quit()**: Initiates the application shutdown.
-- **Debug.Log()**: Outputs a message to the console for debugging purposes.
-- **Editor-Specific Behavior**: Ensures the functionality works within the Unity Editor by stopping play mode.
+- **Realistic Traffic Simulation**: Navigate through dynamically changing traffic conditions.
+- **Multiple Game Modes**: Includes time trials, free drive, and puzzle-solving challenges.
+- **Customizable Vehicles**: Personalize your car with a variety of upgrades and skins.
+- **Stunning Graphics**: Immersive visuals that bring urban environments to life.
+- **Intuitive Controls**: Easy-to-learn, responsive controls suitable for all players.
 
-## Usage
+![Key Features Screenshot](path/to/features-screenshot.png)
 
-1. Attach this script to a GameObject in your Unity scene.
-2. Create a UI button in your scene.
-3. Assign the `QuitApplication` method to the button's `OnClick` event in the Inspector.
+## Game Details
 
-## Notes
+- **Title**: Gridlock Rush
+- **Version**: 1.0.0
+- **Platform**: Windows, macOS, Android, iOS
+- **Developer**: [Your Studio Name]
+- **Release Date**: [Release Date]
 
-- **Build and Play**: The `Application.Quit()` method only works in a built game. It does not function within the Unity Editor.
-- **Editor Compatibility**: The `UnityEditor.EditorApplication.isPlaying` line ensures testing convenience within the Unity Editor.
-- **Debugging**: The `Debug.Log()` line can be removed or commented out in production builds.
+![Gameplay Screenshot](path/to/gameplay-screenshot.png)
 
-## Example Scenario
+## How to Play
 
-Add a "Quit" button to the main menu of your game and link the `QuitApplication` method to provide players with a way to exit the game.
+1. Choose a game mode from the main menu.
+2. Navigate through the traffic to reach your destination or solve the given puzzle.
+3. Use in-game currency to unlock new cars and upgrades.
+4. Progress through levels to unlock harder challenges.
+
+## System Requirements
+
+### Minimum:
+
+- **OS**: Windows 7/10, macOS 10.12
+- **Processor**: Dual-core 2.0 GHz
+- **Memory**: 4 GB RAM
+- **Graphics**: Integrated GPU
+- **Storage**: 500 MB available space
+
+### Recommended:
+
+- **OS**: Windows 10, macOS 11
+- **Processor**: Quad-core 3.0 GHz
+- **Memory**: 8 GB RAM
+- **Graphics**: Dedicated GPU (2 GB VRAM)
+- **Storage**: 1 GB available space
+
+## Development Roadmap
+
+- **Future Updates**: Plans for multiplayer mode, new cars, and additional environments.
+- **Player Feedback**: Your suggestions will shape upcoming features.
+
+## Visual Insights
+
+![Customizable Vehicles Screenshot](path/to/vehicles-screenshot.png)
+
+## Support
+
+For assistance, reach out to our support team at [support email] or visit our [website link].
+
+## Conclusion
+
+Get ready to dive into the ultimate car simulation experience with **Gridlock Rush**. Master traffic puzzles, showcase your driving skills, and enjoy endless hours of fun!
+
+![Thank You Image](path/to/thank-you-image.png)
