@@ -153,6 +153,9 @@ public class LevelScript : MonoBehaviour
 
 For this purpose built an AI system with using NavMesh AI.
 
+Vehicle AI: Vehicles or cars navigating roads or streets while avoiding collisions.
+AI Navigation for Games: Any other scenario where characters need to navigate through a 3D space and interact with obstacles.
+
 ```csharp
 private NavMeshAgent navMeshAgent;
 
