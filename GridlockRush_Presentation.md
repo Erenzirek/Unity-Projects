@@ -195,6 +195,19 @@ void Update()
 
 ```
 
+if the distance condition distanceToPlayer <= rangeCheckDistance then FollowPlayer() function called.
+
+```csharp
+  private void FollowPlayer()
+    {
+        // Oyuncuyu takip et ama minimum bir mesafe (offset) bırak
+        Vector3 directionToPlayer = (playerCar.position - transform.position).normalized;
+        Vector3 targetPosition = playerCar.position - directionToPlayer * distanceOffset;
+        navMeshAgent.SetDestination(targetPosition); // Yönü bu şekilde ayarla
+    }
+
+```
+
 The FollowPlayer() method makes the enemy follow the player's car while keeping a minimum distance. It calculates the direction to the player, adjusts the target position to stay behind the player by a specified distanceOffset, and then directs the enemy to that target using the NavMeshAgent. This ensures the enemy follows the player without getting too close.
 
 ### 2. **Performance Optimization**:
