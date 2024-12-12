@@ -6,17 +6,26 @@
 
 ![Gridlock Rush Banner](./Project-Images/Symbol_3.jpg)
 
-## Game
-
 ## Key Features
 
-- **Realistic Traffic Simulation**: Navigate through dynamically changing traffic conditions.
-- **Multiple Game Modes**: Includes time trials, free drive, and puzzle-solving challenges.
-- **Customizable Vehicles**: Personalize your car with a variety of upgrades and skins.
-- **Stunning Graphics**: Immersive visuals that bring urban environments to life.
-- **Intuitive Controls**: Easy-to-learn, responsive controls suitable for all players.
+- **Low-Poly Style**  
+  A charming and visually appealing low-poly art style designed for mobile platforms.
 
-![Key Features Screenshot](path/to/features-screenshot.png)
+- **Easy and Fun Gameplay**  
+  Enjoy an intuitive, easy-to-learn driving experience that’s perfect for players of all ages.
+
+- **Realistic Traffic Simulation**  
+  Navigate through dynamically changing traffic conditions while solving fun and engaging challenges.
+
+- **Time Trial Mode**  
+  Race against the clock to complete levels as quickly as possible, testing your driving skills under pressure.
+
+- **Level System**  
+  Progress through levels with increasing difficulty, unlocking new challenges and rewards as you advance.
+
+- **Intuitive Controls**  
+   Simple, responsive controls that make it easy for players to jump right in and enjoy the game.
+  ![Key Features Screenshot](path/to/features-screenshot.png)
 
 ## Game Details
 
