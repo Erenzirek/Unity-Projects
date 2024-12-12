@@ -36,29 +36,6 @@
 - **Developer**: OPCD STUDIO
 - **Release Date**: Coming soon on the Play Store!
 
-## Code Review
-
-Before diving into the game's visual design and insights, it’s important to conduct a **Code Review** to ensure quality, maintainability, and optimization.
-
-### Use of `PlayerPrefs` in `LevelManager` Script
-
-In the **`LevelManager`** script, we use **`PlayerPrefs`** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **`PlayerPrefs`** is used:
-
-````csharp
-int levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
-Debug.Log("Levels Unlocked: " + levelsUnlocked);
-
-foreach (Button button in buttons)
-{
-    button.interactable = false;
-}
-
-for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
-{
-    buttons[i].interactable = true;
-    Debug.Log($"Button {i} is interactable.");
-}
-
 ## Gameplay Screenshots
 
 ### Primary Gameplay Images
@@ -195,4 +172,28 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ```md
 ![alt text](assets/images/screenshot.png)
-````
+```
+
+## Code Review
+
+Before diving into the game's visual design and insights, it’s important to conduct a **Code Review** to ensure quality, maintainability, and optimization.
+
+### Use of `PlayerPrefs` in `LevelManager` Script
+
+In the **`LevelManager`** script, we use **`PlayerPrefs`** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **`PlayerPrefs`** is used:
+
+```csharp
+int levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+Debug.Log("Levels Unlocked: " + levelsUnlocked);
+
+foreach (Button button in buttons)
+{
+    button.interactable = false;
+}
+
+for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
+{
+    buttons[i].interactable = true;
+    Debug.Log($"Button {i} is interactable.");
+}
+```
