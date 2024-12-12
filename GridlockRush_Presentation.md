@@ -102,7 +102,7 @@ Before diving into the game's visual design and insights, it’s important to co
 
 In the **`LevelManager`** script, we use **`PlayerPrefs`** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **`PlayerPrefs`** is used:
 
-````csharp
+```csharp
 int levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 Debug.Log("Levels Unlocked: " + levelsUnlocked);
 
@@ -116,6 +116,7 @@ for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
     buttons[i].interactable = true;
     Debug.Log($"Button {i} is interactable.");
 }
+```
 
 ### 2. **Performance Optimization**:
 
@@ -187,4 +188,4 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ```md
 ![alt text](assets/images/screenshot.png)
-````
+```
