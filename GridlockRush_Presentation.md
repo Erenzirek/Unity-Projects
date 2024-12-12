@@ -35,7 +35,7 @@
 - **Developer**: OPCD STUDIO
 - **Release Date**: Coming soon on the Play Store!
 
-![Gameplay Screenshot](path/to/gameplay-screenshot.png)
+![Gameplay Screenshot](./Project-Images/Game-Image-1.jpg)
 
 ## How to Play
 
