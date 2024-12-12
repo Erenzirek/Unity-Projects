@@ -195,7 +195,11 @@ void Update()
 
 ```
 
+## `FollowPlayer()` Method Explanation
+
 if the distance condition distanceToPlayer <= rangeCheckDistance then FollowPlayer() function called.The FollowPlayer() method makes the enemy follow the player's car while keeping a minimum distance. It calculates the direction to the player, adjusts the target position to stay behind the player by a specified distanceOffset, and then directs the enemy to that target using the NavMeshAgent. This ensures the enemy follows the player without getting too close.
+
+### Code Breakdown:
 
 ```csharp
   private void FollowPlayer()
@@ -214,7 +218,7 @@ The `OnCollisionEnter` method handles the behavior when the enemy collides with 
 
 ### Code Breakdown:
 
-````csharp
+```csharp
 private void OnCollisionEnter(Collision collision)
 {
     if (collision.gameObject.CompareTag("Player") && isCharging)
@@ -238,6 +242,41 @@ private void OnCollisionEnter(Collision collision)
         }
     }
 }
+```
+
+## Timer Method Explanation
+
+Mathf.FloorToInt(currentTime / 60): Converts the current time (in seconds) to minutes by dividing by 60 and rounding down.
+Mathf.FloorToInt(currentTime % 60): Calculates the remaining seconds by taking the remainder when dividing currentTime by 60.
+timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);: This formats the minutes and seconds into a two-digit format (e.g., 02:30 for 2 minutes and 30 seconds) and displays it on the timerText UI element.
+DisplayFinalTime():
+
+This function is called when the game ends to show the final time.
+It works similarly to UpdateTimerDisplay(), but instead of updating the timer continuously, it displays the final elapsed time at the moment the game is over.
+finalTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);: Formats and displays the final time in minutes:seconds format on the finalTimeText UI element.
+Purpose:
+UpdateTimerDisplay(): Keeps the timer updated during gameplay to show the remaining time.
+DisplayFinalTime(): Shows the final time when the game ends (e.g., when the timer runs out or when the player finishes the level).
+
+### Timer Method Explanation
+
+```csharp
+    private void UpdateTimerDisplay()
+    {
+        int minutes = Mathf.FloorToInt(currentTime / 60);
+        int seconds = Mathf.FloorToInt(currentTime % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    // Displays the final time when the game ends
+    private void DisplayFinalTime()
+    {
+        int minutes = Mathf.FloorToInt(currentTime / 60);
+        int seconds = Mathf.FloorToInt(currentTime % 60);
+        finalTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+```
+
 ### 2. **Performance Optimization**:
 
 - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
@@ -308,4 +347,4 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ```md
 ![alt text](assets/images/screenshot.png)
-````
+```
