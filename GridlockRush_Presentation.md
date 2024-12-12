@@ -98,9 +98,24 @@ Before diving into the game's visual design and insights, it’s important to co
 
 ### 1. **Code Structure**:
 
-- Ensure the codebase follows a clean and consistent structure.
-- Organize the project into clear directories for assets, scripts, and resources.
-- Check for unnecessary duplication and streamline code where possible.
+### Use of PlayerPrefs in LevelManager Script
+
+In the **LevelManager** script, we use **PlayerPrefs** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **PlayerPrefs** is used:
+
+csharp
+int levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+Debug.Log("Levels Unlocked: " + levelsUnlocked);
+
+foreach (Button button in buttons)
+{
+button.interactable = false;
+}
+
+for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
+{
+buttons[i].interactable = true;
+Debug.Log($"Button {i} is interactable.");
+}
 
 ### 2. **Performance Optimization**:
 
