@@ -35,7 +35,35 @@
 - **Developer**: OPCD STUDIO
 - **Release Date**: Coming soon on the Play Store!
 
-# Gameplay Screenshots
+## Code Review
+
+Before diving into the gameplay and visual insights, a thorough **Code Review** is essential to ensure quality, maintainability, and performance of the game.
+
+1. **Code Structure**:
+
+   - Ensure that the project is organized in a clear and logical structure with separate directories for assets, scripts, and resources.
+   - Avoid unnecessary code duplication and ensure modularity.
+
+2. **Performance Optimization**:
+
+   - Optimize traffic simulations and physics calculations for better performance on mobile devices, aiming for a smooth experience across various Android devices.
+   - Analyze memory usage and ensure the game runs efficiently under load (multiple vehicles on screen).
+
+3. **Error Handling and Debugging**:
+
+   - Thoroughly test major gameplay features such as traffic AI, car physics, and player interactions to ensure there are no major bugs.
+   - Debug any existing issues, particularly with timing, physics, or user input.
+
+4. **Code Readability**:
+
+   - Ensure the code is clean, well-documented, and follows standard practices for readability.
+   - Use meaningful variable names and clear comments to make it easier for future developers to contribute.
+
+5. **Testing**:
+   - Write unit tests for key features like traffic behavior, car controls, and game mechanics.
+   - Stress-test the game with various scenarios to ensure smooth performance and bug-free gameplay.
+
+## Gameplay Screenshots
 
 ## Primary Gameplay Images
 
@@ -90,38 +118,6 @@
 
 - **Future Updates**: Plans new cars, and additional level designs.
 - **Player Feedback**: Your suggestions will shape upcoming features.
-
-## Code Review
-
-Before diving into the game's visual design and insights, it’s important to conduct a **Code Review** to ensure quality, maintainability, and optimization.
-
-1. **Code Structure**:
-
-   - Ensure the codebase follows a clean and consistent structure.
-   - Organize the project into clear directories for assets, scripts, and resources.
-   - Check for unnecessary duplication and streamline code where possible.
-
-2. **Performance Optimization**:
-
-   - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
-   - Look for areas where memory usage can be reduced and frame rates improved, especially during intense traffic scenarios.
-   - Optimize loading times for smoother gameplay experience.
-
-3. **Bug and Error Checking**:
-
-   - Ensure that all major gameplay features work smoothly, including traffic AI, car physics, and user interactions.
-   - Address any existing bugs or glitches in the game mechanics, particularly in time-sensitive challenges or parking sequences.
-
-4. **Code Readability**:
-
-   - Ensure that variable names are meaningful, and code is well-documented for future developers.
-   - Simplify complex logic where possible to make it easier for new developers to understand and contribute.
-
-5. **Testing**:
-   - Implement unit tests where applicable, especially for traffic behavior and car controls.
-   - Perform stress tests to ensure the game can handle multiple cars and dynamic traffic scenarios without performance degradation.
-
-By conducting a thorough code review, we ensure that **Gridlock Rush** remains performant, bug-free, and ready for future development.
 
 ## Visual Insights
 
