@@ -195,7 +195,7 @@ void Update()
 
 ```
 
-if the distance condition distanceToPlayer <= rangeCheckDistance then FollowPlayer() function called.
+if the distance condition distanceToPlayer <= rangeCheckDistance then FollowPlayer() function called.The FollowPlayer() method makes the enemy follow the player's car while keeping a minimum distance. It calculates the direction to the player, adjusts the target position to stay behind the player by a specified distanceOffset, and then directs the enemy to that target using the NavMeshAgent. This ensures the enemy follows the player without getting too close.
 
 ```csharp
   private void FollowPlayer()
@@ -208,8 +208,36 @@ if the distance condition distanceToPlayer <= rangeCheckDistance then FollowPlay
 
 ```
 
-The FollowPlayer() method makes the enemy follow the player's car while keeping a minimum distance. It calculates the direction to the player, adjusts the target position to stay behind the player by a specified distanceOffset, and then directs the enemy to that target using the NavMeshAgent. This ensures the enemy follows the player without getting too close.
+## `OnCollisionEnter` Method Explanation
 
+The `OnCollisionEnter` method handles the behavior when the enemy collides with the player’s car while charging. Below is a breakdown of how it works:
+
+### Code Breakdown:
+
+````csharp
+private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.CompareTag("Player") && isCharging)
+    {
+        Rigidbody playerRb = collision.gameObject.GetComponent<Rigidbody>();
+
+        if (playerRb != null)
+        {
+            // Calculate impact direction: from enemy to player
+            Vector3 impactDirection = collision.transform.position - transform.position;
+            impactDirection.y = 0; // Prevent movement along the Y-axis.
+            impactDirection.Normalize();
+
+            // Calculate the impact force based on the enemy's current speed
+            float impactForce = navMeshAgent.velocity.magnitude * forceMultiplier;
+
+            // Apply the calculated force to the player's car
+            playerRb.AddForce(impactDirection * impactForce, ForceMode.Impulse);
+
+            Debug.Log($"Player hit with force: {impactForce}");
+        }
+    }
+}
 ### 2. **Performance Optimization**:
 
 - Review how traffic simulation and physics calculations are handled to optimize performance, especially for mobile devices.
@@ -280,4 +308,4 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ```md
 ![alt text](assets/images/screenshot.png)
-```
+````
