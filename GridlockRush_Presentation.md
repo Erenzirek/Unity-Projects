@@ -24,7 +24,7 @@
   Progress through levels with increasing difficulty, unlocking new challenges and rewards as you advance.
 
 - **Intuitive Controls**  
-   Simple, responsive controls that make it easy for players to jump right in and enjoy the game.
+  Simple, responsive controls that make it easy for players to jump right in and enjoy the game.
 
   ![Key Features Screenshot](path/to/features-screenshot.png)
 
@@ -167,33 +167,9 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Provide instructions and examples for use. Include screenshots as needed.  
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
 ```md
 ![alt text](assets/images/screenshot.png)
-```
-
-## Code Review
-
-Before diving into the game's visual design and insights, it’s important to conduct a **Code Review** to ensure quality, maintainability, and optimization.
-
-### Use of `PlayerPrefs` in `LevelManager` Script
-
-In the **`LevelManager`** script, we use **`PlayerPrefs`** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **`PlayerPrefs`** is used:
-
-```csharp
-int levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
-Debug.Log("Levels Unlocked: " + levelsUnlocked);
-
-foreach (Button button in buttons)
-{
-    button.interactable = false;
-}
-
-for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
-{
-    buttons[i].interactable = true;
-    Debug.Log($"Button {i} is interactable.");
-}
 ```
