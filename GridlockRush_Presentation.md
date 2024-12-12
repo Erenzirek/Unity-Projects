@@ -98,23 +98,23 @@ Before diving into the game's visual design and insights, it’s important to co
 
 ### 1. **Code Structure**:
 
-### Use of PlayerPrefs in LevelManager Script
+### Use of `PlayerPrefs` in `LevelManager` Script
 
-In the **LevelManager** script, we use **PlayerPrefs** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **PlayerPrefs** is used:
+In the **`LevelManager`** script, we use **`PlayerPrefs`** to manage the progression of the levels the player has unlocked. Here's a breakdown of how **`PlayerPrefs`** is used:
 
-csharp
+````csharp
 int levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 Debug.Log("Levels Unlocked: " + levelsUnlocked);
 
 foreach (Button button in buttons)
 {
-button.interactable = false;
+    button.interactable = false;
 }
 
 for (int i = 0; i < levelsUnlocked && i < buttons.Length; i++)
 {
-buttons[i].interactable = true;
-Debug.Log($"Button {i} is interactable.");
+    buttons[i].interactable = true;
+    Debug.Log($"Button {i} is interactable.");
 }
 
 ### 2. **Performance Optimization**:
@@ -182,9 +182,9 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.  
+Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
 ```md
 ![alt text](assets/images/screenshot.png)
-```
+````
