@@ -31,9 +31,9 @@
 
 - **Title**: Gridlock Rush
 - **Version**: 1.0.0
-- **Platform**: Windows, macOS, Android, iOS
-- **Developer**: [Your Studio Name]
-- **Release Date**: [Release Date]
+- **Platform**: Android
+- **Developer**: OPCD STUDIO
+- **Release Date**: Coming soon on the Play Store!
 
 ![Gameplay Screenshot](path/to/gameplay-screenshot.png)
 
