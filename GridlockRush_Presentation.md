@@ -258,7 +258,7 @@ Purpose:
 UpdateTimerDisplay(): Keeps the timer updated during gameplay to show the remaining time.
 DisplayFinalTime(): Shows the final time when the game ends (e.g., when the timer runs out or when the player finishes the level).
 
-### Timer Method Explanation
+### Code Breakdown
 
 ```csharp
     private void UpdateTimerDisplay()
