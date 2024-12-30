@@ -2,7 +2,7 @@
 
 ## Game Overview
 
-**Gridlock Rush** is an engaging car simulation game where players navigate through challenging traffic scenarios. Test your driving skills and experience the thrill of overcoming gridlocks in style.
+Gridlock Rush is a parking simulation game that offers players a fun and enjoyable experience with its diverse maps. Test your parking skills and overcome challenges at every level!
 
 ![Gridlock Rush Banner](./Project-Images/Symbol_3.jpg)
 
